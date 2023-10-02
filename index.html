@@ -2,31 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird</title>
+    <title>Flappy bird</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="container">
-        <div id="game">
-            <div id="blocks">
-                <div id="block1"></div>
-                <div id="block2"></div>
-                <div id="block3"></div>
-                <div id="block4"></div>
-                <div id="block5"></div>
-                <div id="block6"></div>
-                <div id="block7"></div>
-                <div id="block8"></div>
-            </div>
-            <div id="bird"><img src="Bird.png" alt="bird"></div>
-        </div>
-        <div id="result">
-            <h1 style="margin-top: 10px;">Game Over</h1>
-            <p id="text"></p>
-            <button id="btn" onclick="location.reload()"> Restart</button>
-        </div>
+    <div id="game">
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="bird"><img src="Bird.png" alt="" srcset=""></div>
     </div>
+     <div id="result">
+         <h1 style="margin-top: 30px;">Game over</h1>
+         <p id="text"></p>
+         <button id="btn" onclick="location.reload()">Restart</button>
+     </div>
+
 
 
     <script src="index.js"></script>
